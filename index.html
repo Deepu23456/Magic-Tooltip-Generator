@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magic Tooltip Generator</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  
+  <body>
+    <div class="card">
+      <h2>Magic Tooltip Generator ✨</h2>
+      <div class="preview-box">
+        <button class="hover-btn">Hover me 👀</button>
+        <div class="tooltip" id="tooltip" data-position="top">
+          This is a magic tooltip!
+        </div>
+      </div>
+      <div class="controls">
+        <label for="position">Tooltip Position:</label>
+        <select id="position">
+          <option value="top">Top</option>
+          <option value="right">Right</option>
+          <option value="bottom">Bottom</option>
+          <option value="left">Left</option>
+        </select>
+        <button class="copy-btn">Copy Tooltip Code</button>
+        <div class="code-box" id="codeBox"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+
+</html>

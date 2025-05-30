@@ -1,0 +1,138 @@
+
+
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  margin: 0;
+  background: #0f0f0f;
+  color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+.card {
+  background: #1c1c1c;
+  border-radius: 16px;
+  padding: 40px 30px;
+  box-shadow: 0 0 20px rgba(0, 255, 163, 0.2);
+  max-width: 600px;
+  width: 100%;
+  border: 1px solid #2d2d2d;
+}
+h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #00ffa1;
+  margin-bottom: 25px;
+  text-shadow: 0 0 5px #00ffa1;
+}
+.preview-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+.hover-btn {
+  position: relative;
+  padding: 14px 30px;
+  background: #00ffa1;
+  color: #0f0f0f;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.hover-btn:hover {
+  background: #0fffb3;
+}
+.tooltip {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  background: #242424;
+  color: #f5f5f5;
+  border-radius: 6px;
+  padding: 10px 16px;
+  font-size: 14px;
+  white-space: nowrap;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  z-index: 10;
+}
+.hover-btn:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+.tooltip[data-position="top"] {
+  bottom: 115%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-5px);
+}
+.tooltip[data-position="right"] {
+  top: 50%;
+  left: 68%;
+  transform: translateY(-50%) translateX(5px);
+}
+.tooltip[data-position="bottom"] {
+  top: 115%;
+  left: 50%;
+  transform: translateX(-50%) translateY(5px);
+}
+.tooltip[data-position="left"] {
+  top: 50%;
+  right: 68%;
+  transform: translateY(-50%) translateX(-5px);
+}
+.controls {
+  margin-top: 20px;
+}
+.controls label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+.controls select {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background-color: #1f1f1f;
+  color: #f5f5f5;
+  font-size: 14px;
+  width: 100%;
+  margin-bottom: 15px;
+  outline: none;
+}
+.copy-btn {
+  margin-top: 16px;
+  padding: 12px 24px;
+  background: #00ffa1;
+  color: #0f0f0f;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.copy-btn:hover {
+  background: #00ffbf;
+}
+.code-box {
+  background: #141414;
+  padding: 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #80ffea;
+  white-space: pre-wrap;
+  line-height: 1.6;
+  font-family: 'Courier New', monospace;
+  overflow-x: auto;
+  border: 1px solid #2a2a2a;
+  margin-top: 12px;
+}
+
